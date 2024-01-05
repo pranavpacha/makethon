@@ -1,6 +1,6 @@
 @import url('http://fonts.goggleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 .container {
-    width: 60%; /* Adjusted width for a wider container */
+    width: 60%; 
     margin: auto;
     padding: 20px;
     font-weight: bolder;
@@ -9,9 +9,9 @@
 .contact-form {
     font-size: large;
     background-color: var(--bg-color);
-    padding: 30px; /* Increased padding for better spacing */
+    padding: 30px; 
     margin-top: 20px;
-    border-radius: 10px; /* Added border-radius for a cleaner look */
+    border-radius: 10px; 
     border-color: #39FF14;
 }
 .contact-form radio {
@@ -24,22 +24,22 @@
 .contact-form textarea {
     width: 100%;
     padding: 12px;
-    margin: 8px 0; /* Adjusted margin for better spacing */
+    margin: 8px 0; 
     display: inline-block;
     border: 1px solid #39FF14;
     box-sizing: border-box;
-    border-radius: 5px; /* Added border-radius for a softer look */
+    border-radius: 5px; 
 }
 
 .contact-form button {
     background-color: #39FF14;
     color: black;
     padding: 14px 20px;
-    margin: 16px 0; /* Adjusted margin for better spacing */
+    margin: 16px 0; 
     border: none;
     cursor: pointer;
     width: 100%;
-    border-radius: 5px; /* Added border-radius for consistency */
+    border-radius: 5px; 
 }
 
 .contact-form button:hover {
@@ -49,7 +49,7 @@
 .container h2 {
     text-align: center;
     font-size: 2.6rem;
-    margin-bottom: 20px; /* Added margin for better spacing */
+    margin-bottom: 20px; 
 }
 * {
     margin: 0;
@@ -77,9 +77,9 @@ footer {
 
 :root {
     --bg-color: black; 
---second-bg-color: black; /* Deep blue */
---text-color: beige; /* White */
---main-color:  #39FF14; /* Vivid orange */
+--second-bg-color: black; 
+--text-color: beige; 
+--main-color:  #39FF14; 
 
 }
 

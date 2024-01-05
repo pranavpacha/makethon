@@ -13,7 +13,7 @@
 }
 
 ul {
-    border: 2px solid #39FF14; /* Add border around the whole content */
+    border: 2px solid #39FF14; 
             padding: 20px;
     text-align: left;
     font-size: 2rem;
@@ -41,9 +41,9 @@ footer {
 
 :root {
     --bg-color: black; 
---second-bg-color: black; /* Deep blue */
---text-color: beige; /* White */
---main-color:  #39FF14; /* Vivid orange */
+--second-bg-color: black; 
+--text-color: beige; 
+--main-color:  #39FF14; 
 
 }
 
@@ -302,9 +302,6 @@ span {
 }
 
 .about-img img {
-    /* width: 90%;
-    border-radius: 50%;
-    border: .2rem solid var(--main-color); */
     position: relative;
     width: 24rem;
     height: 24rem;
@@ -346,7 +343,7 @@ span {
 }
 .about-content h6 {
     text-align: center;
-    border: 2px solid beige; /* Add border around the whole content */
+    border: 2px solid beige; 
             padding: 20px;
     font-size: 2.6rem;
     color: #39FF14;

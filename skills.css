@@ -26,9 +26,9 @@ footer {
 
 :root {
     --bg-color: black; 
---second-bg-color: black; /* Deep blue */
---text-color: beige; /* White */
---main-color:  #39FF14; /* Vivid orange */
+--second-bg-color: black; 
+--text-color: beige; 
+--main-color:  #39FF14; 
 
 }
 
