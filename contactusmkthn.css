@@ -1,5 +1,50 @@
 @import url('http://fonts.goggleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+.contact-form {
+    background-color:var(--bg-color);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #39FF14;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #39FF14;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    opacity: 0.8;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +53,21 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
 
 }
+footer {
+    text-align: center;
+    --bg-color: black; 
+    --text-color: beige; 
+    --main-color:  #39FF14; 
+    bottom: 0;
+    font-size: 10px; 
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
 
 :root {
     --bg-color: black; 
@@ -80,7 +137,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url("eastman-childs-CEtIM994vaI-unsplash.jpg") no-repeat; 
+    background: url("home.jpg") no-repeat; 
     background-size: 100%;
     background-position: center;
 }
@@ -105,7 +162,7 @@ section {
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: .8px var(--text-color);
+    -webkit-text-stroke: .7px var(--main-color);
 }
 
 .home-content p {
@@ -199,6 +256,14 @@ section {
 }
 
 
+.home-sci   {
+    position: relative;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .home-sci a {
     position: relative;
     display: inline-flex;
@@ -236,24 +301,6 @@ section {
 }
 
 
-/* .home-imHover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100%;
-    background: transparent;
-    border: 2px solid transparent;
-    transition: 3s;
-
-} */
-
-
-.home-imHover:hover{
-    background: var(--bg-color);
-    opacity: .8;
-}
-
 .about{
     display: flex;
     justify-content: center;
@@ -282,19 +329,13 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* This will ensure that the image doesn't overflow the circular div */
 }
 
 .about-img img {
-    /* width: 90%;
-    border-radius: 50%;
-    border: .2rem solid var(--main-color); */
-    position: relative;
-    width: 24rem;
-    height: 24rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will make the image cover the entire div */
 }
 
 .about-img .circle-spin {
@@ -311,23 +352,117 @@ span {
     border-right: .2rem solid var(--main-color);
 }
 
+.about-img2 {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* This will ensure that the image doesn't overflow the circular div */
+    margin: 0 auto; /* This will center the div on the page */
+}
+
+.about-img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will make the image cover the entire div */
+}
+
+.about-img2 .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--main-color);
+    border-bottom: .2rem solid var(--main-color);
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+}
+
+.about-img3 {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* This will ensure that the image doesn't overflow the circular div */
+    margin: 0 auto; /* This will center the div on the page */
+}
+
+.about-img3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* This will make the image fit within the div */
+}
+
+.about-img3 .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--main-color);
+    border-bottom: .2rem solid var(--main-color);
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+}
+
+
+
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 70%;
+    font-size: larger;
+}
+th, td {
+   
+    border: 2px solid #39FF14;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color:beige ;
+    color: black;
+}
 .about-content {
     text-align: left;
 }
 
 .about-content h3 {
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 2.6rem;
 }
-
+.about-content h4 {
+    text-align: center;
+    font-size: 2.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.about-content h5 {
+    text-align: center;
+    font-size: 2.6rem;
+    font-family: 'Times New Roman', Times, serif;
+}
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
 .btn-box.btns {
-    text-align: center;
     display: inline-block;
     width: 15rem;
 }

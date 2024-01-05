@@ -8,9 +8,36 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
 
 }
+
+ul {
+    border: 2px solid #39FF14; /* Add border around the whole content */
+            padding: 20px;
+    text-align: left;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2rem 0 3rem;
+}
+li{
+    text-align: left;
+    font-size: 1.7rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2rem 0 3rem;
+}
+footer {
+    text-align: center;
+    --bg-color: black; 
+    --text-color: beige; 
+    --main-color:  #39FF14; 
+    bottom: 0;
+    font-size: 10px; 
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
 
 :root {
     --bg-color: black; 
@@ -80,7 +107,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url("eastman-childs-CEtIM994vaI-unsplash.jpg") no-repeat; 
+    background: url("home.jpg") no-repeat; 
     background-size: 100%;
     background-position: center;
 }
@@ -105,7 +132,7 @@ section {
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: .8px var(--text-color);
+    -webkit-text-stroke: .7px var(--main-color);
 }
 
 .home-content p {
@@ -199,6 +226,14 @@ section {
 }
 
 
+.home-sci   {
+    position: relative;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .home-sci a {
     position: relative;
     display: inline-flex;
@@ -235,24 +270,6 @@ section {
     width: 100%;
 }
 
-
-/* .home-imHover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100%;
-    background: transparent;
-    border: 2px solid transparent;
-    transition: 3s;
-
-} */
-
-
-.home-imHover:hover{
-    background: var(--bg-color);
-    opacity: .8;
-}
 
 .about{
     display: flex;
@@ -319,15 +336,31 @@ span {
     text-align: center;
     font-size: 2.6rem;
 }
+.about-content h4 {
+    text-align: center;
+    font-size: 2.6rem;
+}
+.about-content h5 {
+    text-align: center;
+    font-size: 2.6rem;
+}
+.about-content h6 {
+    text-align: center;
+    border: 2px solid beige; /* Add border around the whole content */
+            padding: 20px;
+    font-size: 2.6rem;
+    color: #39FF14;
+    font-style: italic;
+}
 
 .about-content p {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    font-family: 'Times New Roman', Times, serif;
     margin: 2rem 0 3rem;
 
 }
 
 .btn-box.btns {
-    text-align: center;
     display: inline-block;
     width: 15rem;
 }
